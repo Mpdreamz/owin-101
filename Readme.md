@@ -18,7 +18,7 @@ Still no dlls, combining owin middleware by ourselves. Use 02.bat to run.
 
 We take a dependency on owin.dll and see what that gives us in return. Use 03.bat to run
 
-[Owin101.BareBonesMiddleware's Readme](Owin101.BareBonesMiddleware)
+[Owin101.IntroducingIAppBuilder's Readme](Owin101.IntroducingIAppBuilder)
 
 ## 04 - Helper assemblies
 
