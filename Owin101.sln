@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-Owin101.BareBones", "Owin101.BareBones\01-Owin101.BareBones.csproj", "{14E542F5-676E-4365-8874-2B5336AF4011}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-Owin101.BareBonesMiddleware", "Owin101.BareBonesMiddleware\02-Owin101.BareBonesMiddleware.csproj", "{1FD0D9DD-AAB0-46C8-A0D5-B07DD3D64151}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-Owin101.IntroducingIAppBuilder", "Owin101.IntroducingIAppBuilder\03-Owin101.IntroducingIAppBuilder.csproj", "{BB91F7A1-D2C1-4677-A221-8A3BB21E81B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-Owin101.BranchingBuilder", "Owin101.BranchingBuilder\05-Owin101.BranchingBuilder.csproj", "{20A63A53-C329-428E-855C-2CBF62C14227}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-Owin101.HelperAssemblies", "Owin101.HelperAssemblies\04-Owin101.HelperAssemblies.csproj", "{D888CA75-C351-4A78-9ED2-48C256B47CA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-Owin101.Hosting", "06-Owin101-Hosting\06-Owin101.Hosting.csproj", "{2E2CA972-FE26-4914-A854-3AA1DA4AE5C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14E542F5-676E-4365-8874-2B5336AF4011}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14E542F5-676E-4365-8874-2B5336AF4011}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14E542F5-676E-4365-8874-2B5336AF4011}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14E542F5-676E-4365-8874-2B5336AF4011}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FD0D9DD-AAB0-46C8-A0D5-B07DD3D64151}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FD0D9DD-AAB0-46C8-A0D5-B07DD3D64151}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FD0D9DD-AAB0-46C8-A0D5-B07DD3D64151}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FD0D9DD-AAB0-46C8-A0D5-B07DD3D64151}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB91F7A1-D2C1-4677-A221-8A3BB21E81B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB91F7A1-D2C1-4677-A221-8A3BB21E81B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB91F7A1-D2C1-4677-A221-8A3BB21E81B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB91F7A1-D2C1-4677-A221-8A3BB21E81B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20A63A53-C329-428E-855C-2CBF62C14227}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20A63A53-C329-428E-855C-2CBF62C14227}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20A63A53-C329-428E-855C-2CBF62C14227}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20A63A53-C329-428E-855C-2CBF62C14227}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D888CA75-C351-4A78-9ED2-48C256B47CA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D888CA75-C351-4A78-9ED2-48C256B47CA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D888CA75-C351-4A78-9ED2-48C256B47CA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D888CA75-C351-4A78-9ED2-48C256B47CA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E2CA972-FE26-4914-A854-3AA1DA4AE5C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E2CA972-FE26-4914-A854-3AA1DA4AE5C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E2CA972-FE26-4914-A854-3AA1DA4AE5C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E2CA972-FE26-4914-A854-3AA1DA4AE5C7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
