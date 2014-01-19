@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-Owin101.BranchingBuilder
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-Owin101.HelperAssemblies", "Owin101.HelperAssemblies\04-Owin101.HelperAssemblies.csproj", "{D888CA75-C351-4A78-9ED2-48C256B47CA7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-Owin101.Hosting", "06-Owin101-Hosting\06-Owin101.Hosting.csproj", "{2E2CA972-FE26-4914-A854-3AA1DA4AE5C7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-Owin101.Hosting", "Owin101-Hosting\06-Owin101.Hosting.csproj", "{2E2CA972-FE26-4914-A854-3AA1DA4AE5C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
