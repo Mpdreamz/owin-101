@@ -7,18 +7,18 @@ You can run this like you would any other console application, F5 this sucker.
 
 ## Microsoft.Owin
 
-We have not actually seen this package up untill now, this dll contains an actual implementation for IAppBuilder.
-It also proves implementations for OwinRequest, OwinResponse, FormCollection, RequestCookieCollection etcetera all of the 
-basics building blocks for dealing with http requests and responses really.
+We have not actually seen this package up until now, this dll contains an actual implementation for IAppBuilder.
+It also proves implementations for OwinRequest, OwinResponse, FormCollection, RequestCookieCollection etcetera. All of the 
+basic building blocks for dealing with http requests and responses really.
 This is also the home of the OwinStartup attribute you often see in online examples.
 
 ## Microsoft.Owin.Diagnostics
 
-This contains the .ErrorPage() and .WelcomePage extensions on IAppBuilder.
+This contains the `.ErrorPage()` and `.WelcomePage()` extensions on IAppBuilder.
 
 ## Microsoft.Owin.Hosting
 
-Defines the basic pipelining for hosting implementations and introduces some concepts
+Defines the basic types for hosting implementations and introduces some concepts
 
 Builder, Loader, Engine, ServerFactory, Starter none of which I fully understand however the `ServerFactory` bit is important since its what actual hosting implementations have to implement.
 
@@ -30,16 +30,15 @@ https://groups.google.com/forum/#!msg/net-http-abstractions/s5A1SlRp3n4/jCiCfE3_
 
 ## Microsoft.Owin.Hosting.HttpListener
 
-An implementation of OwinServerFactory that allows owin middleware to run inside an HttpListener (http.sys)
-
+An implementation of OwinServerFactory that allows owin middleware to run inside an HttpListener (http.sys). Ideal for selfhosting, although I personally prefer Nowin for selfhosting.
 
 ## Microsoft.Owin.Hosting.SystemWeb
 
-An implementation of OwinServerFactory that allows owin middleware to run inside System.Web's request pipeline (ASP.NET). Up untill very recently the only way to run owin inside IIS.
+An implementation of OwinServerFactory that allows owin middleware to run inside System.Web's request pipeline (ASP.NET). Up until very recently the only way to run owin inside IIS.
 
 ## Microsoft.Owin.Hosting.IIS
 
-An implementation of OwinServerFactory that does not run inside the ASP.NET pipeline but inside what i assume to a special HttpModule.
+An implementation of OwinServerFactory that does not run inside the ASP.NET pipeline but inside what I assume to be a special HttpModule.
 Codenamed Helios this is still in beta but I've had no issues already running a production site on azure with it.
 
 # Important note

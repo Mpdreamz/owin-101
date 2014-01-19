@@ -1,6 +1,6 @@
 # Owin 101
 
-Progressively walking through owin into katana and back.
+Progressively walkthrough owin into katana and back.
 
 ## 01 - BareBones
 
@@ -29,7 +29,7 @@ help us write terser/better typed owin middleware. Use 04.bat to run
 
 ## 05 - Branching the builder
 
-We take a dependency on Microsoft.Owin.Mapping to see how we can get a very simple routing going on. Up untill now our handlers were 
+We take a dependency on Microsoft.Owin.Mapping to see how we can get a very simple routing going on. Up until now our handlers were 
 completely sequential. This shows how to branch off and have different endpoints doing different things.
 
 Use 05.bat to run

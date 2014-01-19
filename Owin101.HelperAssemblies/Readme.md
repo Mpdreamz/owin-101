@@ -2,7 +2,7 @@
 
 ## Owin.Types
 
-This strongly types some of the types defined in the owin spec. For instance, up untill now i've been getting to the response stream using `env["owin.ResponseBody"]`. 
+This strongly types some of the types defined in the owin spec. For instance, up until now i've been getting to the response stream using `env["owin.ResponseBody"]`. 
 This works fine but nobody really likes to stringly type in a static language right? Owin.Types allows us to write `env[OwinConstants.ResponseBody]`. 
 
 This only strongly types the owin variables defined in the spec. Individual servers may place additional variables in the environment dictionary.
@@ -17,7 +17,7 @@ compared to:
 
     builder.Use(new Func<AppFunc, AppFunc>(next => (AppFunc) WriteHelloWordMiddleWare));
 
-We can even do better and by just doing:
+We can even do better by simply stating:
 
     builder.UseHandlerAsync((req, res) => res.WriteAsync("Hello world gets even easier!\r\n"));
 
