@@ -13,7 +13,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-Owin101.BranchingBuilder
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-Owin101.HelperAssemblies", "Owin101.HelperAssemblies\04-Owin101.HelperAssemblies.csproj", "{D888CA75-C351-4A78-9ED2-48C256B47CA7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-Owin101.Hosting", "Owin101-Hosting\06-Owin101.Hosting.csproj", "{2E2CA972-FE26-4914-A854-3AA1DA4AE5C7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-Owin101.Hosting", "Owin101.Hosting\06-Owin101.Hosting.csproj", "{2E2CA972-FE26-4914-A854-3AA1DA4AE5C7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6FBF9EB7-9C86-44B4-AA82-16B3AB4E1A2E}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.md = Readme.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{D847A4C9-BCA3-4CC6-93C0-D858DFD08605}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
