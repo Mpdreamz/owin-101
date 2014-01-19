@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.Owin.Mapping</name>
+    </assembly>
+    <members>
+        <member name="T:Owin.MapPathExtensions">
+            <summary>
+            Extension methods for the MapPathMiddleware
+            </summary>
+        </member>
+        <member name="M:Owin.MapPathExtensions.MapPath``1(Owin.IAppBuilder,System.String,``0)">
+            <summary>
+            If the request path starts with the given pathBase, execute the given branchApp instead of 
+            continuing to the next component in the pipeline.
+            </summary>
+            <typeparam name="TApp">The application signature</typeparam>
+            <param name="builder"></param>
+            <param name="pathBase">The path to match</param>
+            <param name="branchApp">The branch to take for positive path matches</param>
+            <returns></returns>
+        </member>
+        <member name="M:Owin.MapPathExtensions.MapPath(Owin.IAppBuilder,System.String,System.Action{Owin.IAppBuilder})">
+            <summary>
+            If the request path starts with the given pathBase, execute the app configured via branchConfig instead of 
+            continuing to the next component in the pipeline.
+            </summary>
+            <param name="builder"></param>
+            <param name="pathBase">The path to match</param>
+            <param name="branchConfig">The branch to take for positive path matches</param>
+            <returns></returns>
+        </member>
+        <member name="T:Microsoft.Owin.Mapping.MapPathMiddleware">
+            <summary>
+            Used to create path based branches in your application pipeline.
+            The owin.RequestPathBase is not included in the evaluation, only owin.RequestPath.
+            Matching paths have the matching piece removed from owin.RequestPath and added to the owin.RequestPathBase.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Owin.Mapping.MapPathMiddleware.#ctor(System.Func{System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.Tasks.Task},System.Func{System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.Tasks.Task},System.String)">
+            <summary>
+            
+            </summary>
+            <param name="next">The normal pipeline taken for a negative match</param>
+            <param name="branch">The branch taken for a positive match</param>
+            <param name="pathMatch">The path to match</param>
+        </member>
+        <member name="M:Microsoft.Owin.Mapping.MapPathMiddleware.Invoke(System.Collections.Generic.IDictionary{System.String,System.Object})">
+            <summary>
+            
+            </summary>
+            <param name="environment"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Owin.MapPredicateExtensions">
+            <summary>
+            Extension methods for the MapPredicateMiddleware
+            </summary>
+        </member>
+        <member name="M:Owin.MapPredicateExtensions.MapPredicate``1(Owin.IAppBuilder,System.Func{System.Collections.Generic.IDictionary{System.String,System.Object},System.Boolean},``0)">
+            <summary>
+            Branches the request pipeline based on the result of the given predicate.
+            </summary>
+            <typeparam name="TApp">The application signature</typeparam>
+            <param name="builder"></param>
+            <param name="predicate">Invoked with the request environment to determine if the branch should be taken</param>
+            <param name="branchApp">The branch to take if the predicate Func returns true</param>
+            <returns></returns>
+        </member>
+        <member name="M:Owin.MapPredicateExtensions.MapPredicate(Owin.IAppBuilder,System.Func{System.Collections.Generic.IDictionary{System.String,System.Object},System.Boolean},System.Action{Owin.IAppBuilder})">
+            <summary>
+            Branches the request pipeline based on the result of the given predicate.
+            </summary>
+            <param name="builder"></param>
+            <param name="predicate">Invoked with the request environment to determine if the branch should be taken</param>
+            <param name="branchConfig">Configures a branch to take</param>
+            <returns></returns>
+        </member>
+        <member name="M:Owin.MapPredicateExtensions.MapPredicateAsync``1(Owin.IAppBuilder,System.Func{System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.Tasks.Task{System.Boolean}},``0)">
+            <summary>
+            Branches the request pipeline based on the async result of the given predicate.
+            </summary>
+            <param name="builder"></param>
+            <param name="predicate">Invoked asynchronously with the request environment to determine if the branch should be taken</param>
+            <param name="branchApp">The branch to take if the predicate Func returns true</param>
+            <returns></returns>
+        </member>
+        <member name="M:Owin.MapPredicateExtensions.MapPredicateAsync(Owin.IAppBuilder,System.Func{System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.Tasks.Task{System.Boolean}},System.Action{Owin.IAppBuilder})">
+            <summary>
+            Branches the request pipeline based on the async result of the given predicate.
+            </summary>
+            <param name="builder"></param>
+            <param name="predicate">Invoked asynchronously with the request environment to determine if the branch should be taken</param>
+            <param name="branchConfig">Configures a branch to take</param>
+            <returns></returns>
+        </member>
+        <member name="T:Microsoft.Owin.Mapping.MapPredicateMiddleware">
+            <summary>
+            Determines if the request should take a specific branch of the pipeline by passing the environment
+            to a user defined callback.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Owin.Mapping.MapPredicateMiddleware.#ctor(System.Func{System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.Tasks.Task},System.Func{System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.Tasks.Task},System.Func{System.Collections.Generic.IDictionary{System.String,System.Object},System.Boolean})">
+            <summary>
+            
+            </summary>
+            <param name="next">The normal application pipeline</param>
+            <param name="branch">The branch to take on a true result</param>
+            <param name="predicate">The user callback that determines if the branch should be taken</param>
+        </member>
+        <member name="M:Microsoft.Owin.Mapping.MapPredicateMiddleware.#ctor(System.Func{System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.Tasks.Task},System.Func{System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.Tasks.Task},System.Func{System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.Tasks.Task{System.Boolean}})">
+            <summary>
+            
+            </summary>
+            <param name="next">The normal application pipeline</param>
+            <param name="branch">The branch to take on a true result</param>
+            <param name="predicateAsync">The async user callback that determines if the branch should be taken</param>
+        </member>
+        <member name="M:Microsoft.Owin.Mapping.MapPredicateMiddleware.Invoke(System.Collections.Generic.IDictionary{System.String,System.Object})">
+            <summary>
+            
+            </summary>
+            <param name="environment"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
